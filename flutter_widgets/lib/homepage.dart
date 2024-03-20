@@ -179,4 +179,33 @@ class ElevatedButtonWidget extends StatelessWidget {
     );
   }
 }
+class StackWidget extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        const Text(
+          '7. Stack:',
+          style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold),
+        ),
+        Stack(
+          children: [
+            Container(
+              width: 200.0,
+              height: 200.0,
+              color: Color.fromARGB(255, 0, 0, 0),
+            ),
+            Container(
+              width: 150.0,
+              height: 150.0,
+              color: Color.fromARGB(255, 14, 51, 19),
+            ),
+          ],
+        ),
+        SizedBox(height: 20.0),
+      ],
+    );
+  }
+}
 
