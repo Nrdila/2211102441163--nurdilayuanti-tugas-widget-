@@ -92,4 +92,36 @@ class ContainerWidget extends StatelessWidget {
     );
   }
 }
+class RowColumnWidget extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        const Text(
+          '3. Row dan Column:',
+          style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold),
+        ),
+        Row(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          children: [
+            Container(
+                width: 50.0,
+                height: 50.0,
+                color: const Color.fromARGB(255, 244, 54, 143)),
+            Container(
+                width: 50.0,
+                height: 50.0,
+                color: Color.fromARGB(255, 13, 224, 136)),
+            Container(
+                width: 50.0,
+                height: 50.0,
+                color: const Color.fromARGB(255, 229, 243, 33)),
+          ],
+        ),
+        SizedBox(height: 20.0),
+      ],
+    );
+  }
+}
 
