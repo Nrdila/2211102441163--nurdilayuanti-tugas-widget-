@@ -230,3 +230,26 @@ class PaddingWidget extends StatelessWidget {
     );
   }
 }
+class CenterWidget extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        const Text(
+          '9. Center:',
+          style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold),
+        ),
+        Center(
+          child: Container(
+            width: 100.0,
+            height: 100.0,
+            color: Color.fromARGB(255, 22, 154, 231),
+            child: const Text('Universitas Muhammadiyah Kalimantan Timur'),
+          ),
+        ),
+        SizedBox(height: 20.0),
+      ],
+    );
+  }
+}
