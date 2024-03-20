@@ -208,4 +208,25 @@ class StackWidget extends StatelessWidget {
     );
   }
 }
-
+class PaddingWidget extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        const Text(
+          '8. Padding:',
+          style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold),
+        ),
+        Padding(
+          padding: const EdgeInsets.all(20.0),
+          child: Container(
+            color: Color.fromARGB(255, 97, 122, 64),
+            child: const Text('Universitas Muhammadiyah Kalimantan Timur'),
+          ),
+        ),
+        SizedBox(height: 20.0),
+      ],
+    );
+  }
+}
