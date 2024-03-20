@@ -124,4 +124,24 @@ class RowColumnWidget extends StatelessWidget {
     );
   }
 }
+class ImageWidget extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        const Text(
+          '4. Image:',
+          style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold),
+        ),
+        Image.network(
+          'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.liputan6.com%2Fhot%2Fread%2F5049186%2Fcara-menggambar-bunga-yang-mudah-dari-mawar-tulip-hingga-teratai&psig=AOvVaw3hBT7Y6GB2uXmqhgwWdCN8&ust=1711035618016000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCKis58OWg4UDFQAAAAAdAAAAABAE',
+          width: 150.0,
+          height: 150.0,
+        ),
+        SizedBox(height: 20.0),
+      ],
+    );
+  }
+}
 
