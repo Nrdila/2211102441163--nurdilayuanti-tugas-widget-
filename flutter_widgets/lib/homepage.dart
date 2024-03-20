@@ -144,4 +144,20 @@ class ImageWidget extends StatelessWidget {
     );
   }
 }
+class IconWidget extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        const Text(
+          '5. Icon:',
+          style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold),
+        ),
+        Icon(Icons.favorite, size: 50.0, color: Color.fromARGB(255, 135, 26, 236)),
+        SizedBox(height: 20.0),
+      ],
+    );
+  }
+}
 
