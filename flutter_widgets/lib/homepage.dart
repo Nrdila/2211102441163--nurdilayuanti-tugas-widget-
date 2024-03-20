@@ -253,3 +253,23 @@ class CenterWidget extends StatelessWidget {
     );
   }
 }
+class AspectRatioWidget extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children:
+      [
+        const Text(
+          '10. AspectRatio:',
+          style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold),
+        ),
+        AspectRatio(
+          aspectRatio: 16 / 9,
+          child: Container(color: Color.fromARGB(255, 207, 205, 41)),
+        ),
+        SizedBox(height: 20.0),
+      ],
+    );
+  }
+}
