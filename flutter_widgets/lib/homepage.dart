@@ -273,3 +273,38 @@ class AspectRatioWidget extends StatelessWidget {
     );
   }
 }
+class ListViewWidget extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        const Text(
+          '11. ListView:',
+          style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold),
+        ),
+        SizedBox(
+          height: 150.0,
+          child: ListView(
+            scrollDirection: Axis.horizontal,
+            children: [
+              Container(
+                width: 150.0,
+                color: Color.fromARGB(255, 140, 221, 9),
+              ),
+              Container(
+                width: 150.0,
+                color: Color.fromARGB(255, 21, 80, 136),
+              ),
+              Container(
+                width: 150.0,
+                color: Color.fromARGB(255, 226, 17, 17),
+              ),
+            ],
+          ),
+        ),
+        SizedBox(height: 20.0),
+      ],
+    );
+  }
+}
