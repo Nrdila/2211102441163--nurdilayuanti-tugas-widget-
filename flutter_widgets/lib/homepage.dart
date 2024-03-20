@@ -160,4 +160,23 @@ class IconWidget extends StatelessWidget {
     );
   }
 }
+class ElevatedButtonWidget extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        const Text(
+          '6. ElevatedButton:',
+          style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold),
+        ),
+        ElevatedButton(
+          onPressed: () {},
+          child: const Text('Universitas Muhammadiyah Kalimantan Timur'),
+        ),
+        SizedBox(height: 20.0),
+      ],
+    );
+  }
+}
 
